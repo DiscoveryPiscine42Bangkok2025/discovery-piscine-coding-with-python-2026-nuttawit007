@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-'''
+''' 
     ?> ./upcase_it.py | cat -e
     none$
     ?> ./upcase_it.py "initiation" | cat -e
