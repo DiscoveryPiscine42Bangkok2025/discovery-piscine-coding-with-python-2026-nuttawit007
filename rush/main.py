@@ -72,6 +72,5 @@ R...
 #     board = board.strip().splitlines()
 #     checkmate(board)
 
-
 main()
-#test with python3 main.py | cat -e
+#test with ./main.py | cat -e
