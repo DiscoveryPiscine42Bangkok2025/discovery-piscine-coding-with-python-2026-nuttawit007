@@ -23,7 +23,6 @@ def is_valid_board(board):
         if len(row_line) != row_count:
             print("Invalid board: not a square.")
             return False
-    print("Valid board detected.")
     return True
 
 def checkmate(board):
@@ -50,6 +49,7 @@ def checkmate(board):
             if enemy == 'P':
                 """Pawnจะรุกเมื่ออยู่แนวทแยงที่ติดกับคิง"""
                 if row_enemy - king_r == 1 and abs(col_enemy - king_c) == 1: # P ต้องอยู่แถวล่างของ K และ อยู่แนวทแยง
+                    print("Pawn attack detected.")
                     is_threat = True
 
             """ตรวจ Rook, Queen ในแนวตั้งและแนวนอน"""
