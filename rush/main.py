@@ -2,28 +2,31 @@
 from checkmate import checkmate
 
 """ Test cases 1 """
+# def main():
+#     board = """\
+# R.........
+# .K........
+# ..P.......
+# ..........
+# ..........
+# .....aSSS.
+# \
+# """ 
+#     print(board)
+#     board = board.strip().splitlines()
+#     checkmate(board)
+
+""" Test cases 2 """
 def main():
     board = """\
 R...
-.K..
+.K.A
 ..P.
 ....\
 """ 
     print(board)
     board = board.strip().splitlines()
     checkmate(board)
-
-""" Test cases 2 """
-# def main():
-#     board = """\
-# R...
-# .K.....
-# ..P.
-# ....\
-# """ 
-#     print(board)
-#     board = board.strip().splitlines()
-#     checkmate(board)
 
 """ Test cases 3 """
 # def main():

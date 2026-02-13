@@ -18,6 +18,9 @@ def is_valid_board(board):
         return False
     row_count = len(board) # จำนวนแถวในboard
     # print("row_count: " + str(row_count))
+    if row_count > 8:
+        print("Invalid board: exceeds maximum size of 8.")
+        return False
     for row_line in board:
         # print("row str: " + row_line)
         if len(row_line) != row_count:
@@ -44,6 +47,11 @@ def checkmate(board):
     for row_enemy, val_r in enumerate(board):
         for col_enemy, enemy in enumerate(val_r):
             is_threat = False
+
+            enemy_list = ["P", "R", "Q", "K", "B", "."]
+            if enemy not in enemy_list:
+                print("Invalid piece found on board.")
+                return
             
             """ตรวจ Pawn"""
             if enemy == 'P':
